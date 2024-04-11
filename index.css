@@ -1,0 +1,506 @@
+/* -------------------------------------- Imported fonts ----------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+	font-family: bonello;
+	src: url(Bonello-Regular.otf);
+}
+
+@font-face {
+	font-family: kefa-bold;
+	src: url(kefa-bold.ttf);
+}
+
+@font-face {
+	font-family: kefa-r;
+	src: url(FontsFree-Net-Kefa-Regular-3.ttf);
+}
+
+/* ----------------------------------------------Global Css--------------------------------------------------------- */
+body {
+	margin: 0 5%;
+	color: aliceblue;
+	background: rgb(32, 32, 32);
+}
+
+/* ---------------------------------------------------Home Page----------------------------------------------------- */
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	margin-top: 7vh;
+
+	gap: 10vw;
+}
+
+#link {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 5vw;
+}
+
+#links {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: "Montserrat Alternates", sans-serif;
+}
+
+#home {
+	display: flex;
+	flex-direction: row;
+	height: 81vh;
+	padding: 2% 4%;
+	justify-content: space-between;
+}
+
+#left-box {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10%;
+	width: 50%;
+}
+
+#left-heading {
+	font-family: kefa-bold;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+#left-subHeading {
+	font-family: kefa-bold;
+	margin-top: 4%;
+	font-size: 40px;
+	font-weight: 700;
+
+
+}
+
+#left-desc {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 23px;
+	margin: 10% 0;
+	font-weight: 400;
+
+}
+
+#scroll {
+	display: flex;
+	align-items: center;
+	margin-top: 10%;
+	font-size: 20px;
+	font-family: kefa-r;
+	font-weight: 700;
+	gap: 2%;
+}
+
+#scroll i {
+	border: 1px solid white;
+	padding: 2.5% 2.5%;
+	border-radius: 50%;
+	font-size: 20px;
+}
+
+#right-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2%;
+	width: fit-content;
+	justify-content: space-between;
+
+}
+
+#right-img {
+	width: 450px;
+	height: 70vh;
+	background-color: blue;
+}
+
+#home-button {
+	padding: 3% 6%;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: "Montserrat Alternates", sans-serif;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------About me------------------------------------------------------ */
+
+#about {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 4%;
+	height: 100vh;
+
+}
+
+#about-top-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1%;
+}
+
+#pic {
+	width: 20vw;
+	margin-top: 4%;
+}
+
+#pic img {
+	height: 33vh;
+	border-radius: 50%;
+	margin-left: 20%;
+}
+
+#about-me {
+	width: 60vw;
+	text-align: center;
+}
+
+#about-sub-hed {
+	font-size: 40px;
+	font-style: normal;
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 6%;
+}
+
+#about-para {
+	font-size: 18.5px;
+	font-style: normal;
+	font-weight: 500;
+	font-family: "Montserrat Alternates", sans-serif;
+	margin: 0;
+	text-align: left;
+}
+
+#about-mid-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 3%;
+	height: 30vh;
+}
+
+#about-mid-box h1 {
+	font-family: kefa-r;
+	font-size: 30px;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	justify-content: space-around;
+}
+
+#education {
+	width: 27vw;
+}
+
+#education ul {
+	margin-top: 15%;
+	margin-right: 6%;
+	text-decoration: none;
+	text-align: left;
+	font-size: 15px;
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 400;
+	line-height: 210%;
+}
+
+#education ul span {
+	font-weight: 600;
+}
+
+.line-btw {
+	margin-top: 9vh;
+	height: 72%;
+}
+
+#skills {
+	width: 27vw;
+}
+
+#skill-logo {
+	margin-top: 15%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+
+}
+
+.skill-logo-row {
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+#hobbies {
+	width: 27vw;
+}
+
+#hobbies-img {
+	margin-top: 15%;
+
+}
+
+#about-bottom-box {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2%;
+}
+
+#about-bottom-box h1 {
+	font-family: kefa-r;
+	font-weight: 700;
+	margin: 0;
+	margin-left: 9.8%;
+}
+
+#lang {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 25%;
+}
+
+#lang p {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 600;
+	font-size: 17px;
+	border: 1px solid white;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+/* ---------------------------------------------My Work------------------------------------------------------------ */
+
+#work {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 4%;
+	height: 100vh;
+}
+
+#work-top-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#work-top-box h1 {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+}
+
+#work-top-box h4 {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-top: 2%;
+}
+
+#work-mid-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	margin: 5% 15%;
+
+}
+
+#work-mid-box p {
+	font-family: kefa-r;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0;
+}
+
+#work-bottom-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#work-bottom-box img {
+	height: 48vh;
+}
+
+#work-box {
+	text-align: center;
+}
+
+#work-box p {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* --------------------------------------Contact Me------------------------------------------------------------------- */
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	padding: 0 4%;
+	padding-top: 2%;
+	height: 100vh;
+}
+#contact-top-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+#contact-top-box h1{
+	font-family: "Montserrat Alternates";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+margin: 0;
+}
+#contact-top-box p{
+	font-family: "Montserrat Alternates";
+font-size: 35px;
+font-style: normal;
+font-weight: 500;
+margin: 0;
+margin-top: 1%;
+}
+#contact-mid-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 11%;
+}
+#contact-mid-box h1{
+	font-family: kefa-r;
+	font-size: 40px;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	margin-bottom: 15%;
+	justify-content: space-around;
+}
+#Site-link{
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start
+}
+#Site-link p{
+	display: flex;
+	flex-direction: row;
+	gap:19px;
+	font-family: "Montserrat Alternates";
+	font-size: 16px;
+font-style: normal;
+font-weight: 400;
+margin-bottom: 40%;
+}
+#details{
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#details h1{
+	margin-bottom: 10%;
+}
+#contact-detail p{
+	display: flex;
+	flex-direction: row;
+	font-family: "Montserrat Alternates";
+	align-items: center;
+	font-size: 16px;
+font-style: normal;
+font-weight: 400;
+gap: 40px;
+margin-bottom: 15%;
+}
+#detail-para-special img{
+	margin-right: 7.5px;
+}
+#newsletter{
+	width: 27vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+#newsletter h1{
+	margin-bottom: 9%;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 85%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+	height: 2vh;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 14px 0;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+}
+form textarea{
+	height: 11vh;
+}
+.line-btw-2{
+	margin-top: 14vh;
+	height: 72%;
+}
+#contact-bottom-box{
+	margin-top: 1%;
+}
+
+#contact-bottom-box a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: aliceblue;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+#contact-bottom-box a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);
+}
+#footer{
+    text-align: center;
+    font-family: "Montserrat Alternates";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+margin-top: 3%;
+}
+#footer i{
+    color: #ff004f;
+}
